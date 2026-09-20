@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SauceDemo QA Automation Suite" verbose="1">
+    <test name="Regression Test Suite">
+        <classes>
+            <class name="com.saucedemo.tests.LoginTest" />
+            <class name="com.saucedemo.tests.InventoryTest" />
+            <class name="com.saucedemo.tests.E2ETest" />
+        </classes>
+    </test>
+</suite>
