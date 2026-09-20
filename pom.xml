@@ -26,12 +26,11 @@
       <version>${selenium.version}</version>
     </dependency>
 
-    <!-- TestNG -->
+    <!-- TestNG (compile scope so it is available across all packages) -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>${testng.version}</version>
-      <scope>test</scope>
     </dependency>
 
     <!-- WebDriverManager -->
@@ -51,6 +50,11 @@
         <configuration>
           <release>17</release>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
       </plugin>
     </plugins>
   </build>
